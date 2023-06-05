@@ -1,0 +1,161 @@
+.main-header {
+  background-color: var(--dark-white-color);
+}
+
+.page-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--black-color);
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.logo-header::after {
+  content: url(../img/chocolate-logo.svg);
+  width: 21px;
+  height: 21px;
+  margin-left: 4px;
+}
+
+.logo-header-first {
+  font-style: italic;
+}
+
+.menu-header {
+  display: none;
+}
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.mobile-menu-icon {
+  stroke: var(--black-color);
+}
+
+.address-header {
+  display: none;
+}
+
+/*---------SCREEN 768px---------*/
+
+@media screen and (min-width: 768px) {
+  .logo-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .mobile-menu-open {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .mobile-menu-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/*---------SCREEN 1200px---------*/
+
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-header {
+    font-size: 18px;
+    line-height: 1.1;
+    padding-bottom: 32px;
+  }
+
+  .logo-header::after {
+    width: 24px;
+    height: 24px;
+    margin-right: 188px;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .menu-header-item {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .menu-header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    padding-top: 24px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-header-link:hover,
+  .menu-header-link:focus {
+    color: var(--accent-color);
+  }
+
+  .address-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .address-header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .contact-header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-contact-icon {
+    fill: transparent;
+    stroke: var(--black-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact-header-link:hover .social-contact-icon,
+  .contact-header-link:focus .social-contact-icon {
+    stroke: var(--accent-color);
+  }
+}

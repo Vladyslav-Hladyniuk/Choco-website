@@ -1,0 +1,142 @@
+.top-sellers {
+  padding-bottom: 72px;
+}
+
+.top-title-two {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.top-title-two-part {
+  color: var(--accent-color);
+}
+
+.top-sellers-img {
+  width: 335px;
+  height: 464px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-card-one {
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.top-card-thtree {
+  order: 3;
+  display: none;
+}
+
+.top-text-cont {
+  margin-bottom: 32px;
+}
+
+.top-text {
+  text-align: left;
+  margin-right: 29px;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--black-color);
+  letter-spacing: -0.02em;
+}
+.btn-container {
+  margin-top: 18px;
+}
+
+.buy-now-btn {
+  border-radius: 100px;
+  background-color: var(--accent-color);
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--white-color);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 120px;
+  height: 41px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+  background-color: var(--button-bg-hover);
+  color: var(--accent-color);
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 768px) {
+  .top-sellers {
+    padding-bottom: 0;
+  }
+
+  .top-sellers-container {
+    width: 768px;
+  }
+
+  .top-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .top-card-one {
+    order: 1;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .top-card-two {
+    order: 2;
+  }
+
+  .top-text {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .top-text-cont {
+    order: 4;
+    width: 306px;
+    margin: right 0;
+    margin-bottom: 0;
+  }
+
+  .btn-container {
+    order: 5;
+  }
+  .buy-now-btn {
+    width: 162px;
+    height: 50px;
+  }
+  .top-sellers-img {
+    width: 344px;
+    height: 464px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 1200px) {
+  .top-sellers-container {
+    width: 1136px;
+  }
+
+  .top-card-thtree {
+    order: 3;
+    display: block;
+  }
+  .top-text-cont {
+    width: 407px;
+  }
+
+  .top-sellers-img {
+  }
+}

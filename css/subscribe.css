@@ -1,0 +1,310 @@
+:root {
+  --black-color: #111111;
+  --violet-color: #1e1823;
+  --accent-color: #fd9222;
+  --dark-white-color: #fafafa;
+  --white-color: #ffffff;
+  --button-bg-hover: #fcf1e0;
+}
+
+.subscribe-section {
+  max-height: 370px;
+  display: block;
+  padding-top: 62px;
+  padding-bottom: 63px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/Subcribe-mob-1X-min.jpg);
+  background-color: #2e2f42;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/Subcribe-mob-2X-min.jpg);
+  }
+}
+
+.subscribe-cnt {
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.subscribe-title {
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: -0.03em;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.subscribe-text {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--white-color);
+  margin-bottom: 24px;
+}
+
+.subscribe-button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  padding: 12px 28px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  display: block;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #fcf1e0;
+  color: var(--accent-color);
+}
+
+/* BREAK POINTS */
+
+/* TABLETS Break Points */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-cnt {
+    max-width: 467px;
+    margin: 0 auto;
+  }
+  .subscribe-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/Subcribe-tab-1X-min.jpg);
+    background-color: #2e2f42;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/Subcribe-tab-2X-min.jpg);
+    }
+  }
+
+  .subscribe-button {
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .review-modal {
+    width: 517px;
+    max-height: 628px;
+    padding: 40px;
+  }
+
+  .review-modal-close-btn {
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
+  }
+
+  .review-modal-close-btn > svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .review-modal-text {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+  }
+
+  .review-modal-input {
+    height: 66px;
+    padding: 22px 24px;
+  }
+
+  .review-modal-input::placeholder,
+  .review-modal-tel-input::placeholder,
+  .review-modal-textarea::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .review-modal-tel-input {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 177px;
+    height: 66px;
+  }
+
+  .review-modal-wrap-cnt {
+    margin-bottom: 18px;
+  }
+
+  .review-modal-button {
+    padding: 14px 40px;
+  }
+
+  .ukr-flag-icon {
+    top: 25.5px;
+    left: 24px;
+  }
+
+  .review-modal-tel-label::before {
+    top: 20.5px;
+    left: 149.5px;
+  }
+
+  .review-modal-tel-label::after {
+    top: 24px;
+    left: 74px;
+  }
+
+  .review-modal-textarea {
+    height: 137px;
+    padding: 22px 24px;
+  }
+}
+
+/* DESKTOP Break Points */
+@media screen and (min-width: 1200px) {
+  .subscribe-cnt {
+    max-width: 467px;
+    margin: 0 auto;
+  }
+
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/Subcribe-pc-1X-min.jpg);
+    background-color: #2e2f42;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/Subcribe-pc-2X-min.jpg);
+    }
+  }
+
+  .subscribe-button {
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .review-modal {
+    width: 517px;
+    max-height: 628px;
+    padding: 40px;
+  }
+
+  .review-modal-close-btn {
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
+  }
+
+  .review-modal-close-btn > svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .review-modal-text {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+  }
+
+  .review-modal-input {
+    height: 66px;
+    padding: 22px 24px;
+  }
+
+  .review-modal-input::placeholder,
+  .review-modal-tel-input::placeholder,
+  .review-modal-textarea::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .review-modal-tel-input {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 177px;
+    height: 66px;
+  }
+
+  .review-modal-wrap-cnt {
+    margin-bottom: 18px;
+  }
+
+  .review-modal-button {
+    padding: 14px 40px;
+  }
+
+  .ukr-flag-icon {
+    top: 25.5px;
+    left: 24px;
+  }
+
+  .review-modal-tel-label::before {
+    top: 20.5px;
+    left: 149.5px;
+  }
+
+  .review-modal-tel-label::after {
+    top: 24px;
+    left: 74px;
+  }
+
+  .review-modal-textarea {
+    height: 137px;
+    padding: 22px 24px;
+  }
+}

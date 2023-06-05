@@ -1,0 +1,124 @@
+/* Advantages  */
+.advantages {
+  width: 100%;
+  background-color: var(--violet-color);
+  display: flex;
+  padding: 20px;
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0px;
+  gap: 20px;
+}
+
+.advantages-item-title {
+  margin-top: 22px;
+}
+.hidden {
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.advantages-item {
+  margin-bottom: 20px;
+}
+
+.advantages-item::before {
+  display: inline-block;
+  content: '';
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff80;
+  margin-right: auto;
+}
+.choco-bar::before {
+  background-image: url('../img/adv-chocolate-bar-min.png');
+}
+.coin::before {
+  background-image: url('../img/adv-coin-min.png');
+}
+.spoon::before {
+  background-image: url('../img/adv-spoon-min.png');
+}
+.advantages-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--white-color);
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+.advantages-item-text {
+  display: inline-block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #ffffffb3;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 50px;
+  }
+  /* Advantages  */
+  .advantages {
+    max-width: 100%;
+  }
+
+  .advantages-container {
+    max-width: 100%;
+    display: flex;
+  }
+
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 32px) / 2);
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-container {
+    max-width: 1200px;
+    display: flex;
+  }
+  .advantages-list {
+    gap: 70px;
+  }
+  .advantages-item {
+    position: relative;
+    width: calc((100% - 140px) / 3);
+  }
+  .advantages-item::after {
+    content: '';
+    position: absolute;
+    width: 124px;
+    height: 0;
+    border: 1px solid #ffffff80;
+    transform: rotate(90deg);
+    border-radius: 2px;
+    top: 150px;
+    left: 270px;
+  }
+
+  .advantages-item:last-child::after {
+    width: 0;
+  }
+}

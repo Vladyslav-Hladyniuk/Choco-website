@@ -1,0 +1,341 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  overflow-y: auto;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.buy-now-modal {
+  position: relative;
+  padding: 32px 24px;
+  max-width: 311px;
+  max-height: 994px;
+  background: #fafafa;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.buy-now-form-input {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  width: 100%;
+  height: 45px;
+  padding: 14px 18px;
+}
+
+.buy-now-form-input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-orders-item-img {
+  width: 84px;
+}
+
+.item-weight {
+  padding: 6px 16px;
+  width: 70px;
+  height: 29px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+.weight {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  white-space: nowrap;
+}
+
+.modal-orders-item {
+  width: 263px;
+  height: 85px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.buy-form-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.buy-now-form-input.telephone {
+  padding-left: 106px;
+}
+
+.form-field.telephone {
+  position: relative;
+}
+
+.icon-ukraine-flag {
+  display: block;
+  margin-right: 18px;
+}
+.code {
+  display: block;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+}
+
+.form-contacts-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin: 32px 0 18px;
+}
+
+.mastercard-icon-large {
+  display: none;
+}
+
+.mastercard-icon-small {
+  position: absolute;
+  top: 34px;
+  right: 15px;
+}
+
+.buy-form-label-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-field {
+  margin-bottom: 18px;
+}
+
+.text-area {
+  width: 100%;
+  height: 91px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+
+.modal-submit-btn {
+  border-radius: 100px;
+  background-color: var(--accent-color);
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--white-color);
+  display: block;
+  width: 109px;
+  height: 41px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: var(--button-bg-hover);
+  color: var(--accent-color);
+}
+
+.buy-now-close-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  cursor: pointer;
+  right: 24px;
+  top: 24px;
+}
+.icon {
+  stroke: currentColor;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-now-close-btn:hover .icon,
+.buy-now-close-btn:focus .icon {
+  stroke: var(--accent-color);
+}
+
+.flag-code {
+  width: 74px;
+  display: flex;
+  position: absolute;
+  left: 18px;
+  top: 34px;
+  z-index: 99;
+  align-items: center;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+  color: #000000;
+  border-right: 2.75px solid rgba(17, 17, 17, 0.05);
+}
+.icon-ukraine-flag {
+  display: block;
+  margin-right: 8px;
+  width: 24px;
+  height: 18px;
+}
+
+.code {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.form-field.card {
+  position: relative;
+}
+
+@media screen and (min-width: 609px) {
+  .buy-now-modal {
+    max-width: 609px;
+    max-height: 1058px;
+    padding: 48px;
+  }
+
+  .modal-orders {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    /* margin: 32px auto; */
+  }
+
+  .modal-orders-item {
+    width: 160px;
+    height: 196px;
+    padding: 24px 20px 18px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 14px;
+  }
+
+  .item-weight {
+    padding: 8px 29px;
+    width: 96px;
+    height: 33px;
+  }
+
+  .modal-orders-item-img {
+    width: 120px;
+    height: 107px;
+  }
+
+  .form-contacts-group {
+    flex-direction: row;
+    column-gap: 21px;
+    margin: 40px 0 18px;
+  }
+
+  .buy-now-form-input {
+    height: 66px;
+    padding: 22px 24px;
+  }
+  .buy-now-form-input::placeholder,
+  textarea::placeholder {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .buy-form-label-name {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+  .buy-form-label {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+
+  .text-area {
+    height: 137px;
+  }
+  .buy-now-form-input.telephone {
+    padding-left: 177px;
+  }
+
+  .form-field.telephone {
+    position: relative;
+  }
+
+  .icon-ukraine-flag {
+    display: block;
+    margin-right: 18px;
+    width: 32px;
+    height: 24px;
+  }
+  .code {
+    display: block;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .flag-code {
+    width: 125px;
+    display: flex;
+    position: absolute;
+    left: 24px;
+    top: 46px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  .mastercard-icon-small {
+    display: none;
+  }
+  .mastercard-icon-large {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 44px;
+  }
+  .modal-submit-btn {
+    padding: 14px 40px;
+    width: 133px;
+    height: 45px;
+  }
+}

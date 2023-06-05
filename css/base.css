@@ -1,0 +1,83 @@
+:root {
+  --black-color: #111111;
+  --violet-color: #1e1823;
+  --accent-color: #fd9222;
+  --dark-white-color: #fafafa;
+  --white-color: #ffffff;
+  --button-bg-hover: #fcf1e0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: var(--black-color);
+  background-color: var(--dark-white-color);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: calc(768px - 64px);
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: calc(1200px - 64px);
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Добавити адаптив на 375  width 375*/
+/* @media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+} */
+
+/* Защитить папку main */
+/* Файл для шрифтов */
+/* Ниже индекса добавить main.js 
+example:
+import './js/our-products.js';*/
